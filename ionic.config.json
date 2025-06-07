@@ -1,0 +1,7 @@
+{
+  "name": "kriptoApp",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "vue-vite"
+}
