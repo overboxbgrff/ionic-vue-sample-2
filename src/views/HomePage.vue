@@ -7,31 +7,35 @@
     </ion-header>
 
     <ion-content :fullscreen="true">
-      <ion-button expand="block" class="ion-margin" @click="getData">Refresh</ion-button
-      >
+      <ion-button expand="block" class="ion-margin" @click="getData">Refresh</ion-button>
 
       <ion-list>
         <ion-item v-for="crypto in cryptoData" :key="crypto.id">
           <ion-label>
             <ion-grid>
               <ion-row>
+
                 <ion-col size="4">
                   <p>Rank</p>
-                  {{ crypto.rank }}</ion-col
-                >
+                  {{ crypto.rank }}
+                </ion-col>
+
                 <ion-col size="4">
                   {{ crypto.name }}<br />
-                  {{ crypto.symbol }}</ion-col
-                >
+                  {{ crypto.symbol }}
+                </ion-col>
+
                 <ion-col size="4">
                   <p>USD</p>
-                  {{ crypto.price_usd }}</ion-col
-                >
+                  {{ crypto.price_usd }}
+                </ion-col>
+
               </ion-row>
             </ion-grid>
           </ion-label>
         </ion-item>
       </ion-list>
+
     </ion-content>
   </ion-page>
 </template>
